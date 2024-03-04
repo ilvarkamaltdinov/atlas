@@ -1,0 +1,88 @@
+.home {
+
+}
+
+.home .button {
+  width: 100%;
+}
+
+
+.home__auto {
+  position: relative;
+}
+
+.home__auto-title {
+  user-select: none;
+  position: absolute;
+  z-index: -1;
+  top: -70px;
+  left: 0;
+  font-size: 100px;
+  text-transform: uppercase;
+  color: $color-white;
+  opacity: .1;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.home__auto-image {
+  position: relative;
+  right: 10px;
+  width: 100%;
+  z-index: 2;
+  display: block;
+  aspect-ratio: 3/1;
+}
+
+.home__auto-image img {
+  width: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+.car-stars-image {
+  pointer-events: none;
+  position: absolute;
+  top: -100px;
+  right: 0;
+  z-index: 9;
+
+  img {
+    width: 110px;
+  }
+}
+
+@media screen and (min-width: $desktop-width) {
+  .car-stars-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+
+    img {
+      width: 480px;
+    }
+  }
+  .home__auto-image {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-top: -300px;
+    position: absolute;
+    //right: -150px;
+    top: -50%;
+    transform: translateY(50%);
+  }
+  .home__auto-title {
+    top: -244px;
+    font-size: 277px;
+    margin-left: -240px;
+    line-height: normal;
+  }
+  .home .button {
+    width: 290px;
+    margin-top: 111px;
+  }
+  .home__auto {
+    padding-bottom: 100px;
+  }
+}

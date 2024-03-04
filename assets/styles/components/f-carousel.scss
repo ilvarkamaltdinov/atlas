@@ -1,0 +1,58 @@
+
+.f-carousel .f-carousel__nav {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 96px;
+}
+
+.f-carousel .f-carousel__nav button {
+  color: $color-white;
+}
+
+.f-carousel .f-carousel__dots {
+  position: relative;
+  bottom: 0;
+  margin-top: 8px !important;
+}
+
+.f-carousel .f-carousel__dots .f-carousel__dot {
+  width: 1px;
+  height: 100%;
+  background: $color-white;
+}
+
+.f-carousel .f-carousel__dots button {
+  height: 16px;
+}
+
+.f-carousel--no-controls .f-carousel__dots {
+  display: none;
+}
+
+.f-carousel--no-controls .f-carousel__nav {
+  display: none;
+}
+
+.f-carousel--folders-menu .f-carousel__nav {
+  display: none;
+}
+
+@media screen and (min-width: $desktop-width) {
+  .f-carousel .f-carousel__nav {
+    top: -38px;
+  }
+  .f-carousel__viewport {
+    overflow: unset !important;
+    overflow-x: clip !important;
+  }
+  .f-carousel__slide {
+    overflow: visible !important;
+  }
+
+  .f-carousel--folders-menu .f-carousel__nav {
+    display: flex;
+    top: -8px;
+  }
+
+}
